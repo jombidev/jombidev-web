@@ -9,8 +9,8 @@ import GithubIcon from "@/icons/GithubIcon.vue";
   </header>
 
   <main>
-    <div class="main">
-      <img alt="bocchi kawaii" class="profile_img" src="/bocchi.png">
+    <div class="main" ref="main">
+      <img style="padding-left: 20px" alt="bocchi kawaii" class="profile_img" src="/bocchi.png">
       <h1>Jombi</h1>
       <p class="description-text">The Evolving Backend Developer</p>
       <div>
@@ -29,8 +29,6 @@ import GithubIcon from "@/icons/GithubIcon.vue";
 </template>
 
 <style scoped>
-
-
 @font-face {
   font-family: 'LINESeedKR-Bd';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
@@ -43,23 +41,27 @@ main {
   --impact-color: #ff2291;
   --main-color: #fff000;
 }
+
 .profile_img {
   width: 200px;
   height: 200px;
 }
+
 .description-text {
   padding-bottom: 10px;
 }
+
 .icons {
   padding-right: 20px;
 }
+
 .main {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 49.5%;
+  left: 49.5%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 80%;
   text-align: center;
 }
 </style>
